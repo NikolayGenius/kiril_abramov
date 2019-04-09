@@ -1,0 +1,93 @@
+.snow_boards {
+  margin-top: 150px; }
+  @media only screen and (max-width: 725px) {
+    .snow_boards {
+      margin-top: 40px; } }
+  .snow_boards__extreme {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center; }
+  .snow_boards__title {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 35px;
+    text-align: center; }
+    @media only screen and (max-width: 725px) {
+      .snow_boards__title {
+        font-size: 24px;
+        margin-bottom: 15px; } }
+  .snow_boards__item {
+    cursor: pointer; }
+    .snow_boards__item:focus {
+      outline: none;
+      outline-offset: 0; }
+  .snow_boards__description {
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 150px; }
+    .snow_boards__description:before, .snow_boards__description:after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 30px;
+      background-color: #000000;
+      left: 50%;
+      transform: translateY(-50%);
+      top: 45px; }
+    .snow_boards__description:before {
+      transform: rotate(45deg); }
+    .snow_boards__description:after {
+      transform: rotate(-45deg); }
+    @media only screen and (max-width: 725px) {
+      .snow_boards__description {
+        margin-bottom: 40px; }
+        .snow_boards__description:before, .snow_boards__description:after {
+          content: none; } }
+  .snow_boards__prev, .snow_boards__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: none;
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    cursor: pointer; }
+    .snow_boards__prev:before, .snow_boards__prev:after, .snow_boards__next:before, .snow_boards__next:after {
+      content: "";
+      position: absolute;
+      height: 9px;
+      width: 115px;
+      background-color: #bfbfbf; }
+  .snow_boards__next {
+    right: 0; }
+    .snow_boards__next:before, .snow_boards__next:after {
+      right: 0; }
+    .snow_boards__next:before {
+      top: 30px;
+      transform: rotate(45deg); }
+    .snow_boards__next:after {
+      top: 105px;
+      transform: rotate(-45deg); }
+  .snow_boards__prev:before, .snow_boards__prev:after {
+    left: 0; }
+  .snow_boards__prev:before {
+    top: 30px;
+    transform: rotate(-45deg); }
+  .snow_boards__prev:after {
+    top: 105px;
+    transform: rotate(45deg); }
+
+.slick-slide {
+  opacity: 0.5;
+  text-align: center; }
+
+.slick-current {
+  opacity: 1; }
+
+.slick-slide img {
+  margin: 0 auto; }

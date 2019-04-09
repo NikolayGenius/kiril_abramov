@@ -1,0 +1,39 @@
+.snow_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 730px;
+  background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  line-height: 95px; }
+  .snow_details__title {
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "SegoeUI-Semibold", sans-serif; }
+    @media only screen and (max-width: 725px) {
+      .snow_details__title {
+        font-size: 50px;
+        line-height: normal; } }
+  .snow_details__button {
+    display: block;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 14px 68px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-left: auto; }
+    @media only screen and (max-width: 1024px) {
+      .snow_details__button {
+        margin-left: 0; } }
+    @media only screen and (max-width: 725px) {
+      .snow_details__button {
+        width: 100%; } }
+    .snow_details__button:hover {
+      transform: scale(0.95);
+      transition: 0.25s; }

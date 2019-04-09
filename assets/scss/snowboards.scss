@@ -1,0 +1,123 @@
+.snow_boards {
+  margin-top: 150px;
+  @media only screen and (max-width: 725px) {
+    margin-top: 40px;
+  }
+  &__extreme {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 35px;
+    text-align: center;
+    @media only screen and (max-width: 725px) {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  }
+  &__item {
+    cursor: pointer;
+    &:focus {
+      outline: none;
+      outline-offset: 0;
+    }
+  }
+
+  &__description {
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 150px;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 30px;
+      background-color: #000000;
+      left: 50%;
+      transform: translateY(-50%);
+      top: 45px;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+    @media only screen and (max-width: 725px) {
+      &:before,
+      &:after {
+        content: none;
+      }
+      margin-bottom: 40px;
+    }
+  }
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: none;
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      height: 9px;
+      width: 115px;
+      background-color: #bfbfbf;
+    }
+  }
+  &__next {
+    right: 0;
+    &:before,
+    &:after {
+      right: 0;
+    }
+    &:before {
+      top: 30px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      top: 105px;
+      transform: rotate(-45deg);
+    }
+  }
+  &__prev {
+    &:before,
+    &:after {
+      left: 0;
+    }
+    &:before {
+      top: 30px;
+      transform: rotate(-45deg);
+    }
+    &:after {
+      top: 105px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.slick-slide {
+  opacity: 0.5;
+  text-align: center;
+}
+.slick-current {
+  opacity: 1;
+}
+.slick-slide img {
+  margin: 0 auto;
+}

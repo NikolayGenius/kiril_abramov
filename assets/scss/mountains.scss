@@ -1,0 +1,48 @@
+.snow_mountains {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-image: url("../images/background-block.jpg");
+  background-size: cover;
+  height: 950px;
+  margin-top: 215px;
+  @media only screen and (max-width: 725px) {
+    margin-top: 40px;
+    background-image: none;
+    color: #000;
+    height: auto;
+  }
+  &__title {
+    font-size: 48px;
+    font-family: "SegoeUI-Semibold", sans-serif;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-weight: normal;
+    margin-bottom: 75px;
+    @media only screen and (max-width: 725px) {
+      font-size: 28px;
+      line-height: normal;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  &__text {
+    width: 620px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 45px;
+    @media only screen and (max-width: 725px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 725px) {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
